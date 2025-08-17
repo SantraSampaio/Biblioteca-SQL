@@ -7,18 +7,11 @@ SET default_storage_engine = InnoDB;
 create table biblioteca(
 id_bibioteca int primary key auto_increment,
 nome varchar(30) default "Santra Business",
-NIF varchar(10) unique not null default "220LA488",
-Email varchar(30) unique not null Default "santrasampaiocamolo@gmail.com",
-Endereço varchar(50) not null default "Angola-Luanda, Luanda, Largo da Maianga",
-Telefone varchar(15) not null unique default "+244999999999"
+NIF varchar(20) not null default "220LA488",
+Email varchar(100) not null Default "santrasampaio@gmail.com",
+Endereço varchar(100) not null default "Angola-Luanda, Luanda, Largo da Maianga",
+Telefone varchar(20) not null unique default "+244999999999"
 );
-
-
-alter
-table biblioteca 
-add id_biblioteca int primary key auto_increment first;
-
-select * from biblioteca;
 
 /*---------------------- Tabela Estante----------------------*/
 create table estante (
