@@ -182,9 +182,9 @@ add column id_estante int after id_livro;
 
 
 select * from estoque;
-*/
+
 
 alter table estoque 
 drop id_estante;
 
-select * from estoque;
+select * from estoque;*/
